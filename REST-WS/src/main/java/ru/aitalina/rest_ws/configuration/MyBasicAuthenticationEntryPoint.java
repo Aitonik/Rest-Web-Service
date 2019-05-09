@@ -14,7 +14,6 @@ import java.io.PrintWriter;
 @Component
 public class MyBasicAuthenticationEntryPoint extends BasicAuthenticationEntryPoint {
 
-
         @Override
         public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authEx)
                 throws IOException, ServletException {
@@ -27,7 +26,7 @@ public class MyBasicAuthenticationEntryPoint extends BasicAuthenticationEntryPoi
         @Override
         public void afterPropertiesSet() throws Exception {
             // RealmName appears in the login window (Firefox).
-            setRealmName("o7planning");
+            setRealmName("aitonik");
             super.afterPropertiesSet();
         }
 
